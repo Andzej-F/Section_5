@@ -8,6 +8,9 @@ public class DiagonalStar {
         printSquareStar(6);
         System.out.println();
         printSquareStar(8);
+
+        System.out.println(true || false);
+        System.out.println(false || false);
     }
 
     //        *****
@@ -26,10 +29,14 @@ public class DiagonalStar {
             System.out.println("Invalid Value");
             return;
         }
-
+        // row=1; 1<=5; 1++
+        // row=2; 2<=5; 1++
         for (int row = 1; row <= number; row++) {
+
+            // column=1; 1<=5; 1++
             for (int column = 1; column <= number; column++) {
-//
+
+                //*
                 if (row == 1 || row == number || row == column ||
                         column == 1 ||
                         column == number ||
